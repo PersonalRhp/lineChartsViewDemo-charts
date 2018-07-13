@@ -1,0 +1,26 @@
+PODS:
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - Masonry (1.0.2)
+  - MJExtension (3.0.15.1)
+
+DEPENDENCIES:
+  - Charts
+  - Masonry (~> 1.0.2)
+  - MJExtension (~> 3.0.13)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Charts
+    - Masonry
+    - MJExtension
+
+SPEC CHECKSUMS:
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+
+PODFILE CHECKSUM: 97bc195a1b05538534533c32cd12aef553dca31a
+
+COCOAPODS: 1.5.2

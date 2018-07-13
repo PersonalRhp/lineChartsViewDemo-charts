@@ -1,0 +1,39 @@
+{
+    "data": {
+        "sale_amount_data": [
+                             {
+                             "sale_amount": 18,
+                             "time": 1526659200
+                             },
+                             {
+                             "sale_amount": 23,
+                             "time": 1526745600
+                             },
+                             {
+                             "sale_amount": 98,
+                             "time": 1526832000
+                             },
+                             {
+                             "sale_amount": 111,
+                             "time": 1526918400
+                             },
+                             {
+                             "sale_amount": 71,
+                             "time": 1526918400
+                             },
+                             {
+                             "sale_amount": 231,
+                             "time": 1526918400
+                             },
+                             {
+                             "sale_amount": 131,
+                             "time": 1526918400
+                             }
+                             ]
+    },
+    "status": {
+        "code": 200,
+        "message": "Ok all right."
+    },
+    "success": true
+}
