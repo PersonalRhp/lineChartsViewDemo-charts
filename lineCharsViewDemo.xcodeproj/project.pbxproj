@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B260ECA20FDDCDE00FF86CC /* THNLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B260EC920FDDCDE00FF86CC /* THNLineChartView.m */; };
 		4B74B21220F5E530002BCEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B21120F5E530002BCEBB /* AppDelegate.m */; };
 		4B74B21520F5E530002BCEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B21420F5E530002BCEBB /* ViewController.m */; };
 		4B74B21820F5E530002BCEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B74B21620F5E530002BCEBB /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		4B74B23520F5E532002BCEBB /* lineCharsViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B23420F5E532002BCEBB /* lineCharsViewDemoUITests.m */; };
 		4B74B24420F5EA48002BCEBB /* THNStatisticsChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B24320F5EA48002BCEBB /* THNStatisticsChartView.m */; };
 		4B74B24720F5EB84002BCEBB /* THNXLineFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B24620F5EB84002BCEBB /* THNXLineFormatter.m */; };
-		4B74B24A20F5EEEC002BCEBB /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74B24820F5EEEC002BCEBB /* UIColor+Extension.m */; };
 		4B74B24D20F5F28C002BCEBB /* charts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B74B24B20F5F28C002BCEBB /* charts.json */; };
 		4B74B24E20F5F28C002BCEBB /* statisOrder.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B74B24C20F5F28C002BCEBB /* statisOrder.json */; };
 		AF3A24D9BA5C199630AFD721 /* Pods_lineCharsViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65552D3A9F43141217680827 /* Pods_lineCharsViewDemo.framework */; };
@@ -42,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		2009A4F4AB283614556267C9 /* Pods-lineCharsViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lineCharsViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lineCharsViewDemo/Pods-lineCharsViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B260EC820FDDCDE00FF86CC /* THNLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THNLineChartView.h; sourceTree = "<group>"; };
+		4B260EC920FDDCDE00FF86CC /* THNLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THNLineChartView.m; sourceTree = "<group>"; };
 		4B74B20D20F5E530002BCEBB /* lineCharsViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lineCharsViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74B21020F5E530002BCEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B74B21120F5E530002BCEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		4B74B24320F5EA48002BCEBB /* THNStatisticsChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNStatisticsChartView.m; sourceTree = "<group>"; };
 		4B74B24520F5EB84002BCEBB /* THNXLineFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNXLineFormatter.h; sourceTree = "<group>"; };
 		4B74B24620F5EB84002BCEBB /* THNXLineFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNXLineFormatter.m; sourceTree = "<group>"; };
-		4B74B24820F5EEEC002BCEBB /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
-		4B74B24920F5EEEC002BCEBB /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		4B74B24B20F5F28C002BCEBB /* charts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = charts.json; sourceTree = "<group>"; };
 		4B74B24C20F5F28C002BCEBB /* statisOrder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = statisOrder.json; sourceTree = "<group>"; };
 		65552D3A9F43141217680827 /* Pods_lineCharsViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lineCharsViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,14 +125,14 @@
 			children = (
 				4B74B21020F5E530002BCEBB /* AppDelegate.h */,
 				4B74B21120F5E530002BCEBB /* AppDelegate.m */,
-				4B74B24220F5EA48002BCEBB /* THNStatisticsChartView.h */,
-				4B74B24320F5EA48002BCEBB /* THNStatisticsChartView.m */,
-				4B74B24520F5EB84002BCEBB /* THNXLineFormatter.h */,
-				4B74B24620F5EB84002BCEBB /* THNXLineFormatter.m */,
-				4B74B24920F5EEEC002BCEBB /* UIColor+Extension.h */,
-				4B74B24820F5EEEC002BCEBB /* UIColor+Extension.m */,
 				4B74B21320F5E530002BCEBB /* ViewController.h */,
 				4B74B21420F5E530002BCEBB /* ViewController.m */,
+				4B74B24220F5EA48002BCEBB /* THNStatisticsChartView.h */,
+				4B74B24320F5EA48002BCEBB /* THNStatisticsChartView.m */,
+				4B260EC820FDDCDE00FF86CC /* THNLineChartView.h */,
+				4B260EC920FDDCDE00FF86CC /* THNLineChartView.m */,
+				4B74B24520F5EB84002BCEBB /* THNXLineFormatter.h */,
+				4B74B24620F5EB84002BCEBB /* THNXLineFormatter.m */,
 				4B74B21620F5E530002BCEBB /* Main.storyboard */,
 				4B74B21920F5E532002BCEBB /* Assets.xcassets */,
 				4B74B21B20F5E532002BCEBB /* LaunchScreen.storyboard */,
@@ -355,10 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B74B21520F5E530002BCEBB /* ViewController.m in Sources */,
-				4B74B24A20F5EEEC002BCEBB /* UIColor+Extension.m in Sources */,
 				4B74B24720F5EB84002BCEBB /* THNXLineFormatter.m in Sources */,
 				4B74B22020F5E532002BCEBB /* main.m in Sources */,
 				4B74B21220F5E530002BCEBB /* AppDelegate.m in Sources */,
+				4B260ECA20FDDCDE00FF86CC /* THNLineChartView.m in Sources */,
 				4B74B24420F5EA48002BCEBB /* THNStatisticsChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

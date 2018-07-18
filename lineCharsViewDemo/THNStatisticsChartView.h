@@ -10,4 +10,5 @@
 
 @interface THNStatisticsChartView : UIView
 
+
 @end
